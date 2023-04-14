@@ -35,7 +35,7 @@ export default async function AboutPage() {
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-              <img
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -101,7 +101,7 @@ export default async function AboutPage() {
             </div>
 
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              <img
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -167,8 +167,8 @@ export default async function AboutPage() {
               </div>
             </div>
 
-            <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              <img
+            <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 text-center justify-self-center">
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -235,7 +235,7 @@ export default async function AboutPage() {
             </div>
 
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              <img
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -302,7 +302,7 @@ export default async function AboutPage() {
             </div>
 
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              <img
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -369,7 +369,7 @@ export default async function AboutPage() {
             </div>
 
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              <img
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -436,7 +436,7 @@ export default async function AboutPage() {
             </div>
 
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              <img
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -503,7 +503,7 @@ export default async function AboutPage() {
             </div>
 
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              <img
+              <Image
                 className="rounded-lg w-20 h-20"
                 src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
                 alt="Image Description"
@@ -570,7 +570,7 @@ export default async function AboutPage() {
             </div>
 
             <div className="grid sm:flex sm:items-center gap-y-3 gap-x-4 justify-self-center text-center justify-self-center">
-              {/* <img className="rounded-lg w-20 h-20" src="../assets/img/160x160/img1.jpg" alt="Image Description" /> */}
+              {/* <Image className="rounded-lg w-20 h-20" src="../assets/Image/160x160/Image1.jpg" alt="Image Description" /> */}
               <div>
                 <h3 className="font-medium text-gray-800 dark:text-gray-200">
                   We are hiring!

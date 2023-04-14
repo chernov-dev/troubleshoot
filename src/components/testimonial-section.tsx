@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const TestimonialSection = () => {
@@ -55,7 +56,7 @@ const TestimonialSection = () => {
               <footer className="mt-6">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
-                    <img
+                    <Image
                       className="h-8 w-8 rounded-full"
                       src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                       alt="Image Description"
