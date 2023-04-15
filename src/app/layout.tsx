@@ -1,18 +1,18 @@
-import { Inter as FontSans } from "next/font/google"
+import { Inter as FontSans } from "next/font/google";
 
-import "@/styles/globals.css"
-import { siteConfig } from "@/config/site"
-import { absoluteUrl, cn } from "@/lib/utils"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { Toaster } from "@/components/ui/toaster"
+import "@/styles/globals.css";
+import { siteConfig } from "@/config/site";
+import { absoluteUrl, cn } from "@/lib/utils";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { Toaster } from "@/components/ui/toaster";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-inter",
-})
+});
 
 interface RootLayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export const metadata = {
@@ -22,19 +22,90 @@ export const metadata = {
   },
   description: siteConfig.description,
   keywords: [
+    "Troubleshoot",
+    "Troubleshooting",
+    "Troubleshoot PC",
+    "PC repair",
+    "Computer repair",
+    "Laptop repair",
+    "Virus removal",
+    "Operating system updates",
+    "Software installation",
+    "Tech support",
+    "Computer maintenance",
+    "Hardware upgrades",
+    "Personal computers",
     "Next.js",
     "React",
     "Tailwind CSS",
     "Server Components",
     "Radix UI",
+    "Computer diagnostics",
+    "Data recovery",
+    "Network setup",
+    "Remote support",
+    "IT services",
+    "Computer upgrades",
+    "Computer optimization",
+    "PC tune-up",
+    "Computer security",
+    "Firewall setup",
+    "Antivirus software",
+    "Malware removal",
+    "Spyware removal",
+    "Adware removal",
+    "Data backup",
+    "Cloud computing",
+    "Computer peripherals",
+    "Computer accessories",
+    "Computer parts",
+    "Computer peripherals repair","Computer maintenance and repair",
+    "Computer service",
+    "Computer support",
+    "Computer help",
+    "Computer troubleshooting services",
+    "IT support services",
+    "Technology services",
+    "Computer consulting",
+    "Computer training",
+    "Computer education",
+    "Computer hardware",
+    "Computer software",
+    "Computer peripherals",
+    "Computer networking",
+    "Computer server",
+    "Server maintenance",
+    "Server setup",
+    "Virtual server",
+    "Managed IT services",
+    "On-site computer service",
+    "Remote computer service",
+    "Online computer service",
+    "Desktop computer repair",
+    "Mobile computer repair",
+    "Computer screen repair",
+    "Computer virus protection",
+    "Cybersecurity services",
+    "Network security",
+    "Wireless networking",
+    "Wired networking",
+    "Computer cables",
+    "Computer power supply",
+    "Computer memory",
+    "Computer storage",
+    "Computer graphics card",
+    "Computer CPU",
+    "Computer motherboard",
+    "Computer fans and cooling",
+    "Computer repair shop"
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "maxchernov.a",
+      url: "https://troubleshoots.vercel.app/",
     },
   ],
-  creator: "shadcn",
+  creator: "maxchernov.a",
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "black" },
     { media: "(prefers-color-scheme: light)", color: "white" },
@@ -46,21 +117,12 @@ export const metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
-    images: [
-      {
-        url: absoluteUrl("/og.jpg"),
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/og.jpg`],
-    creator: "@shadcn",
+    creator: "@maxchernov.a",
   },
   icons: {
     icon: "/favicon.ico",
@@ -68,7 +130,7 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+};
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
@@ -82,9 +144,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body className="min-h-screen">
         {children}
-        
+
         <TailwindIndicator />
       </body>
     </html>
-  )
+  );
 }
