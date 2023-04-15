@@ -17,7 +17,7 @@ const TestimonialSection = () => {
           </p>
         </div>
         <hr className="border-slate-200" />
-        <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between md:max-w-[56rem]">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between md:max-w-[64rem]">
           <div className="lg:col-span-5 lg:col-start-1">
             <div className="mb-8">
               <h2 className="mb-2 text-3xl text-gray-800 font-bold lg:text-4xl dark:text-gray-200">
@@ -57,7 +57,9 @@ const TestimonialSection = () => {
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
                     <Image
-                      className="h-8 w-8 rounded-full"
+                      className="rounded-full"
+                      width={32}
+                      height={32}
                       src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                       alt="Image Description"
                     />
@@ -98,8 +100,8 @@ const TestimonialSection = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M9 14.4452C9 14.9504 8.55229 15.36 8 15.36C7.44772 15.36 7 14.9504 7 14.4452V3.38868L1.70711 8.23079C1.31658 8.58806 0.683417 8.58806 0.292893 8.23079C-0.0976311 7.87353 -0.0976311 7.29429 0.292893 6.93703L7.11612 0.694919C7.60427 0.248339 8.39573 0.248341 8.88388 0.694919L15.7071 6.93703C16.0976 7.29429 16.0976 7.87353 15.7071 8.23079C15.3166 8.58806 14.6834 8.58806 14.2929 8.23079L9 3.38868V14.4452Z"
                         fill="currentColor"
                       />
@@ -122,8 +124,8 @@ const TestimonialSection = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M9 14.4452C9 14.9504 8.55229 15.36 8 15.36C7.44772 15.36 7 14.9504 7 14.4452V3.38868L1.70711 8.23079C1.31658 8.58806 0.683417 8.58806 0.292893 8.23079C-0.0976311 7.87353 -0.0976311 7.29429 0.292893 6.93703L7.11612 0.694919C7.60427 0.248339 8.39573 0.248341 8.88388 0.694919L15.7071 6.93703C16.0976 7.29429 16.0976 7.87353 15.7071 8.23079C15.3166 8.58806 14.6834 8.58806 14.2929 8.23079L9 3.38868V14.4452Z"
                         fill="currentColor"
                       />

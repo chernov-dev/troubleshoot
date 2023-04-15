@@ -6,25 +6,24 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import hero from "../../../../public/images/hero.png";
 import { Icons } from "@/components/icons";
+import Mailto from "@/components/utils/mailto";
 
 export default async function AboutPage() {
   return (
     <>
       <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
         <div className="mx-auto flex w-full flex-col gap-4 md:max-w-[52rem]">
-          <div className="max-w-xl mx-auto">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold leading-[1.1] tracking-tighter sm:text-3xl md:text-6xl">
-                Contact us
-              </h2>
-              
-              <p className="mt-2 leading-normal text-slate-700 sm:text-lg sm:leading-7">
-                We&apos;d love to talk about how we can help you.
-              </p>
-            </div>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold leading-[1.1] tracking-tighter sm:text-3xl md:text-6xl">
+              Contact us
+            </h2>
+
+            <p className="mt-2 leading-normal text-slate-700 sm:text-lg sm:leading-7">
+              We&apos;d love to talk about how we can help you.
+            </p>
           </div>
 
-          <div className="mt-12 max-w-lg mx-auto">
+          <div className="mt-12 mx-8 md:max-w-lg md:mx-auto">
             <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
               <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
                 Fill in the form
@@ -116,7 +115,7 @@ export default async function AboutPage() {
                 <div className="mt-6 grid">
                   <button
                     type="submit"
-                    className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                    className={cn(buttonVariants({ size: "lg" }))}
                   >
                     Send inquiry
                   </button>
@@ -130,8 +129,9 @@ export default async function AboutPage() {
               </form>
             </div>
           </div>
-
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
+        </div>
+        <div className="mx-auto flex w-full flex-col gap-4 md:max-w-[64rem]">
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8 max-w-[64rem]">
             <a
               className="flex flex-col h-full text-center rounded-md hover:bg-gray-100 p-4 sm:p-6 dark:hover:bg-white/[.05]"
               href="#"
@@ -165,8 +165,8 @@ export default async function AboutPage() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
                       fill="currentColor"
                     />
@@ -177,7 +177,7 @@ export default async function AboutPage() {
 
             <a
               className="flex flex-col h-full text-center rounded-md hover:bg-gray-100 p-4 sm:p-6 dark:hover:bg-white/[.05]"
-              href="#"
+              href="/faq"
             >
               <svg
                 className="w-9 h-9 text-gray-800 mx-auto dark:text-gray-200"
@@ -208,8 +208,8 @@ export default async function AboutPage() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
                       fill="currentColor"
                     />
@@ -218,9 +218,11 @@ export default async function AboutPage() {
               </div>
             </a>
 
-            <a
+            <Mailto
               className="flex flex-col h-full text-center rounded-md hover:bg-gray-100 p-4 sm:p-6 dark:hover:bg-white/[.05]"
-              href="#"
+              email="example@site.com"
+              subject="Hello & Welcome"
+              body="Hello world!"
             >
               <svg
                 className="w-9 h-9 text-gray-800 mx-auto dark:text-gray-200"
@@ -235,13 +237,13 @@ export default async function AboutPage() {
               </svg>
               <div className="grow">
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  Developer APIs
+                  Contact us by email
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  Check out our development quickstart guide.
+                  If you wish to write us an email instead please use
                 </p>
                 <p className="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600 dark:text-blue-500">
-                  Contact sales
+                  example@site.com
                   <svg
                     className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
                     width="16"
@@ -251,15 +253,15 @@ export default async function AboutPage() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
                       fill="currentColor"
                     />
                   </svg>
                 </p>
               </div>
-            </a>
+            </Mailto>
           </div>
         </div>
       </section>

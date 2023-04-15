@@ -1,5 +1,5 @@
-import { siteConfig } from "@/config/site"
-import { Icons } from "@/components/icons"
+import { siteConfig } from "@/config/site";
+import { Icons } from "@/components/icons";
 
 export function SiteFooter() {
   return (
@@ -7,41 +7,35 @@ export function SiteFooter() {
       <div className="flex  flex-col items-center justify-between gap-4 border-t border-t-slate-200 py-10 md:h-24 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Icons.logo />
-          <p className="text-center text-sm leading-loose md:text-left">
-            Built by{" "}
-            <a
-              href={"twitter"}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              TT team
-            </a>
-            . Hosted on{" "}
-            <a
-              href="https://vercel.com"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              Vercel
-            </a>
-            . Illustrations by{" "}
-            <a
-              href="https://popsy.co"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              Popsy
-            </a>
-            .
-          </p>
+          <div className="flex gap-4 text-center text-sm leading-loose md:text-left">
+            <span>
+              Built by{" "}
+              <a
+                href={siteConfig.links.github}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium underline underline-offset-4"
+              >
+                Troubleshoot team.
+              </a>
+            </span>
+            <span>
+              Hosted on{" "}
+              <a
+                href="https://vercel.com"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium underline underline-offset-4"
+              >
+                Vercel.
+              </a>
+            </span>
+          </div>
         </div>
         <p className="text-center text-sm md:text-left">
           The source code is available on{" "}
           <a
-            href={"github"}
+            href={siteConfig.links.github}
             target="_blank"
             rel="noreferrer"
             className="font-medium underline underline-offset-4"
@@ -52,5 +46,5 @@ export function SiteFooter() {
         </p>
       </div>
     </footer>
-  )
+  );
 }

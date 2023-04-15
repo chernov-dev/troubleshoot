@@ -9,6 +9,8 @@ import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
 import { MobileNav } from "@/components/mobile-nav"
 import { MainNavItem } from "@/types"
+import logo from "../../public/logo.png"
+import Image from "next/image"
 
 interface MainNavProps {
   items?: MainNavItem[]
@@ -22,7 +24,7 @@ export function MainNav({ items, children }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
-        <Icons.logo />
+        <Image src={logo} alt="Logo" width={120} height={60} />
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
         </span>

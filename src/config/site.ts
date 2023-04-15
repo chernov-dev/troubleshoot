@@ -1,9 +1,9 @@
 import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "Troubleshooting",
+  name: "Troubleshoot",
   description:
-    "Troubleshooting is a website that provides comprehensive computer repair, updating, and troubleshooting services to individuals and businesses. Our team of experienced technicians can help you with a wide range of computer problems, including hardware issues, software installation, virus removal, and system optimization.",
+    "Troubleshoot is a website that provides comprehensive computer repair, updating, and troubleshooting services to individuals and businesses. Our team of experienced technicians can help you with a wide range of computer problems, including hardware issues, software installation, virus removal, and system optimization.",
   url: "https://troubleshoots.vercel.app/",
   ogImage: "https://tx.shadcn.com/og.jpg",
   links: {

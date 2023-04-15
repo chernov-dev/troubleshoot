@@ -8,14 +8,15 @@ import { buttonVariants } from "@/components/ui/button";
 import { AppNav } from "@/components/app-nav";
 import { siteConfig } from "@/config/site";
 import { Icons } from "@/components/icons";
+import { faqConfig } from "@/config/faq";
 
-interface ServicesLayoutProps {
+interface FaqLayoutProps {
   children: React.ReactNode;
 }
 
-export default async function ServicesLayout({
+export default async function FaqLayout({
   children,
-}: ServicesLayoutProps) {
+}: FaqLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="container sticky top-0 z-40 bg-white">
@@ -28,9 +29,9 @@ export default async function ServicesLayout({
                   {siteConfig.name}
                 </span>
               </Link>
-              {marketingConfig.mainNav?.length ? (
+              {faqConfig.mainNav?.length ? (
                 <nav className="hidden gap-6 md:flex">
-                  {marketingConfig.mainNav?.map((item, index) => (
+                  {faqConfig.mainNav?.map((item, index) => (
                     <Link
                       key={index}
                       href={item.disabled ? "#" : item.href}

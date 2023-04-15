@@ -3,11 +3,11 @@ import React from 'react'
 const FeatureSection = () => {
   return (
     <section className="container grid justify-center gap-8 py-8 md:py-12 lg:py-24">
-        <div className="mx-auto flex flex-col gap-4 md:max-w-[52rem]">
+        <div className="mx-auto flex flex-col gap-4 md:maxW-[52rem]">
           <h2 className="text-3xl font-bold leading-[1.1] tracking-tighter sm:text-3xl md:text-6xl">
             Features
           </h2>
-          <p className="max-w-[85%] leading-normal text-slate-700 sm:text-lg sm:leading-7">
+          <p className="maxW-[85%] leading-normal text-slate-700 sm:textLg sm:leading-7">
             We provide comprehensive computer repair, updating, and
             troubleshooting services to individuals and businesses. Our team of
             experienced technicians can help you with a wide range of computer
@@ -15,8 +15,8 @@ const FeatureSection = () => {
             removal, and system optimization
           </p>
         </div>
-        <div className="grid justify-center gap-4 sm:grid-cols-2 md:max-w-[56rem] md:grid-cols-3">
-          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-2xl">
+        <div className="grid justify-center gap-4 sm:grid-cols-2 md:maxW-[56rem] md:grid-cols-3">
+          <div className="relative overflow-hidden roundedLg border border-slate-200 bgWhite p-2 shadow-2xl">
             <div className="flex h-[220px] flex-col justify-between rounded-md bg-[#000000] p-6 text-slate-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,9 +25,9 @@ const FeatureSection = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="h-12 w-12 lucide lucide-shield-alert"
               >
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -44,7 +44,7 @@ const FeatureSection = () => {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-2xl">
+          <div className="relative overflow-hidden roundedLg border border-slate-200 bgWhite p-2 shadow-2xl">
             <div className="flex h-[220px] flex-col justify-between rounded-md bg-[#000000] p-6 text-slate-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +53,9 @@ const FeatureSection = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="w-12 h-12 lucide lucide-download"
               >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -73,7 +73,7 @@ const FeatureSection = () => {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-2xl">
+          <div className="relative overflow-hidden roundedLg border border-slate-200 bgWhite p-2 shadow-2xl">
             <div className="flex h-[220px] flex-col justify-between rounded-md bg-[#000000] p-6 text-slate-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,9 +82,9 @@ const FeatureSection = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="w-12 h-12 lucide lucide-screen-share"
               >
                 <path d="M13 3H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3"></path>
@@ -103,7 +103,7 @@ const FeatureSection = () => {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-2xl">
+          <div className="relative overflow-hidden roundedLg border border-slate-200 bgWhite p-2 shadow-2xl">
             <div className="flex h-[245px] flex-col justify-between rounded-md bg-[#000000] p-6 text-slate-200">
               <svg viewBox="0 0 24 24" className="h-12 w-12 fill-current">
                 <svg
@@ -111,10 +111,10 @@ const FeatureSection = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="lucide lucide-laptop"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucideLaptop"
                 >
                   <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path>
                 </svg>{" "}
@@ -132,7 +132,7 @@ const FeatureSection = () => {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-2xl">
+          <div className="relative overflow-hidden roundedLg border border-slate-200 bgWhite p-2 shadow-2xl">
             <div className="flex h-[245px] flex-col justify-between rounded-md bg-[#000000] p-6 text-slate-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,10 +141,10 @@ const FeatureSection = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="w-12 h-12 lucide lucide-wrench"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-12 h-12 lucide lucideWrench"
               >
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
               </svg>
@@ -160,7 +160,7 @@ const FeatureSection = () => {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border border-slate-200 bg-white p-2 shadow-2xl">
+          <div className="relative overflow-hidden roundedLg border border-slate-200 bgWhite p-2 shadow-2xl">
             <div className="flex h-[245px] flex-col justify-between rounded-md bg-[#000000] p-6 text-slate-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -169,9 +169,9 @@ const FeatureSection = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="w-12 h-12 lucide lucide-hard-drive"
               >
                 <line x1="22" x2="2" y1="12" y2="12"></line>

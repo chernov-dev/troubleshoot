@@ -22,12 +22,13 @@ import {
     User,
     X,
     type Icon as LucideIcon,
+    Bug,
   } from "lucide-react"
   
   export type Icon = LucideIcon
   
   export const Icons = {
-    logo: Command,
+    logo: Bug,
     close: X,
     spinner: Loader2,
     chevronLeft: ChevronLeft,
