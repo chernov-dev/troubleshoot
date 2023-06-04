@@ -6,9 +6,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Mailto from "@/components/utils/mailto";
 
-export default async function AboutPage() {
+export default async function ContactPage() {
   return (
-    <section id='contact' className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
+    <section id='contact' className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12">
       <div className="max-w-[85rem] mx-auto">
         <div className="max-w-2xl mx-auto lg:max-w-5xl">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">

@@ -1,178 +1,69 @@
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
 export default async function FaqPage() {
   return (
-    <div className="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-      <div className="max-w-2xl mx-auto mb-10 lg:mb-14">
-        <h2 className="text-2xl font-bold dark:text-white md:text-4xl md:leading-tight">
-          You might be wondering...
-        </h2>
-      </div>
-
-      <div className="max-w-2xl mx-auto divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="py-8 first:pt-0 last:pb-0">
-          <div className="flex gap-x-5">
-            <svg
-              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-            </svg>
-
-            <div>
-              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
-                Can I cancel at anytime?
-              </h3>
-              <p className="mt-1 text-gray-500">
-                Yes, you can cancel anytime no questions are asked while you
-                cancel but we would highly appreciate if you will give us some
-                feedback.
-              </p>
-            </div>
-          </div>
+    <section id='contact' className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12">
+      <div className="max-w-[85rem] mx-auto">
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center pb-8">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            FAQ
+          </h2>
+          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            Here is some frequently asked questions, but feel free to contact us to ask us anything.
+          </p>
         </div>
-
-        <div className="py-8 first:pt-0 last:pb-0">
-          <div className="flex gap-x-5">
-            <svg
-              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-            </svg>
-
-            <div>
-              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
-                My team has credits. How do we use them?
-              </h3>
-              <p className="mt-1 text-gray-500">
-                Once your team signs up for a subscription plan. This is where
-                we sit down, grab a cup of coffee and dial in the details.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-8 first:pt-0 last:pb-0">
-          <div className="flex gap-x-5">
-            <svg
-              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-            </svg>
-
-            <div>
-              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
-                How does Preline&apos;s pricing work?
-              </h3>
-              <p className="mt-1 text-gray-500">
-                Our subscriptions are tiered. Understanding the task at hand and
-                ironing out the wrinkles is key.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-8 first:pt-0 last:pb-0">
-          <div className="flex gap-x-5">
-            <svg
-              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-            </svg>
-
-            <div>
-              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
-                How secure is Preline?
-              </h3>
-              <p className="mt-1 text-gray-500">
-                Protecting the data you trust to Preline is our first priority.
-                This part is really crucial in keeping the project in line to
-                completion.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-8 first:pt-0 last:pb-0">
-          <div className="flex gap-x-5">
-            <svg
-              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-            </svg>
-
-            <div>
-              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
-                How do I get access to a theme I purchased?
-              </h3>
-              <p className="mt-1 text-gray-500">
-                If you lose the link for a theme you purchased, don&apos;t
-                panic! We&apos;ve got you covered. You can login to your
-                account, tap your avatar in the upper right corner, and tap
-                Purchases. If you didn&apos;t create a login or can&apos;t
-                remember the information, you can use our handy Redownload page,
-                just remember to use the same email you originally made your
-                purchases with.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-8 first:pt-0 last:pb-0">
-          <div className="flex gap-x-5">
-            <svg
-              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-            </svg>
-
-            <div>
-              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
-                Upgrade License Type
-              </h3>
-              <p className="mt-1 text-gray-500">
-                There may be times when you need to upgrade your license from
-                the original type you purchased and we have a solution that
-                ensures you can apply your original purchase cost to the new
-                license purchase.
-              </p>
-            </div>
-          </div>
+        <div className="max-w-2xl mx-auto mb-10 lg:mb-14">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>What services does Troubleshoot offer?</AccordionTrigger>
+              <AccordionContent>
+                Troubleshoot offers a range of computer-related services including remote and in-person troubleshooting, networking work, and PC building. Our services also include virus removal, software installation, system optimization, hardware upgrades, and operating system updates.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Where does Troubleshoot operate?</AccordionTrigger>
+              <AccordionContent>
+                Troubleshoot can provide remote services globally. For physical services such as PC building and in-person troubleshooting, we operate within the GTA region of Ontario, Canada.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>What are your operating hours?</AccordionTrigger>
+              <AccordionContent>
+                Our services are available 24/7 to meet your needs.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>How is pricing determined?</AccordionTrigger>
+              <AccordionContent>
+                Pricing depends on the scope of the work involved. We offer a BASIC plan covering virus removal, software installation, remote support, operating system updates, and system optimization. Services beyond these are covered under our PRO plan. Please contact us for more detailed pricing information.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>Do you offer any guarantees or warranties on your work?</AccordionTrigger>
+              <AccordionContent>
+                Yes, we offer a 100% guarantee on our services. If there are limitations to what we can do, we always do our best to meet your needs.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger>How can I reach Troubleshoot for support?</AccordionTrigger>
+              <AccordionContent>
+                You can reach us for support through our website&apos;s online chat or by filling out the contact form. We also accept queries via email.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger>How long does it typically take for a service?</AccordionTrigger>
+              <AccordionContent>
+                It typically takes about an hour to identify problems and another hour to fix them. However, more complex issues may require more time. For PC building, once all components have been shipped, we expect to complete the build within a maximum of 2 hours.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8">
+              <AccordionTrigger>How long does it typically take for a service?</AccordionTrigger>
+              <AccordionContent>
+                We can handle a variety of tasks remotely, including virus removal, software installation, remote support, operating system updates, and system optimization.</AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
-    </div>
+    </section>
+
   );
 }

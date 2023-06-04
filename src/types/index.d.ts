@@ -1,5 +1,6 @@
 
 import { Icons } from "@/components/icons";
+import { ReactAvatarProps } from "react-avatar";
 
 export type NavItem = {
   title: string;
@@ -12,6 +13,7 @@ export type CrewProps = {
   name: string;
   title: string;
   ambitions: string;
+  avatar?: ReactAvatarProps;
 };
 
 export type ActiveCrew = {

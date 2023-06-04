@@ -1,5 +1,5 @@
 import { CrewProps } from "@/types";
-import Image from "next/image";
+import CrewAvatar from "./crew-avatar";
 
 interface CrewCardProps {
   crew: CrewProps;
@@ -10,12 +10,8 @@ const crewCard = ({ crew }: CrewCardProps) => {
     <div className="relative p-2 overflow-hidden border rounded-lg bg-background">
       <div className="flex h-[225px] gap-2 flex-col justify-between rounded-md p-6">
         <div className="flex items-center gap-x-4">
-          <Image
-            className="rounded-full"
-            width={55}
-            height={55}
-            src={crew.image}
-            alt="Image Description"
+          <CrewAvatar
+            crew={crew}
           />
           <div className="grow">
             <h3 className="font-bold">
