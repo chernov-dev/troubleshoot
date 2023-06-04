@@ -1,8 +1,8 @@
 export default async function FaqPage() {
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
       <div className="max-w-2xl mx-auto mb-10 lg:mb-14">
-        <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
+        <h2 className="text-2xl font-bold dark:text-white md:text-4xl md:leading-tight">
           You might be wondering...
         </h2>
       </div>
@@ -11,7 +11,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
+              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -23,7 +23,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
                 Can I cancel at anytime?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -38,7 +38,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
+              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -50,7 +50,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
                 My team has credits. How do we use them?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -64,7 +64,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
+              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -76,7 +76,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
                 How does Preline&apos;s pricing work?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -90,7 +90,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
+              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -102,7 +102,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
                 How secure is Preline?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -117,7 +117,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
+              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -129,7 +129,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
                 How do I get access to a theme I purchased?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -148,7 +148,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
+              className="w-6 h-6 mt-1 text-gray-500 shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -160,7 +160,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 dark:text-gray-200 md:text-lg">
                 Upgrade License Type
               </h3>
               <p className="mt-1 text-gray-500">
