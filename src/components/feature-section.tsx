@@ -2,7 +2,8 @@ const FeatureSection = () => {
   return (
     <section
       id="features"
-      className="container py-8 space-y-6 bg-slate-50 dark:bg-transparent md:py-12 lg:py-24"
+      className="container py-8 space-y-6 rounded-lg bg-slate-50 dark:bg-transparent md:py-12 lg:py-24"
+
     >
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
@@ -35,7 +36,7 @@ const FeatureSection = () => {
             <div className="space-y-2">
               <h3 className="font-bold">Virus Removal</h3>
               <p className="text-sm text-muted-foreground">
-                We can help you remove all types of viruses, malware, and
+                Viruses, malware, and
                 spyware from your computer to ensure it&apos;s running smoothly
                 and securely.
               </p>
@@ -63,8 +64,7 @@ const FeatureSection = () => {
             <div className="space-y-2">
               <h3 className="font-bold">Software Installation</h3>
               <p className="text-sm text-muted-foreground">
-                {" "}
-                We help you install and configure software programs, including
+                Install and configure software programs,
                 productivity tools, antivirus software, and multimedia apps.
               </p>
             </div>
@@ -93,7 +93,7 @@ const FeatureSection = () => {
             <div className="space-y-2">
               <h3 className="font-bold">Remote Support</h3>
               <p className="text-sm text-muted-foreground">
-                In many cases, we can provide remote support to diagnose and fix
+                We provide remote support to diagnose and fix
                 your computer issues without the need for an in-person visit.
               </p>
             </div>
@@ -118,7 +118,7 @@ const FeatureSection = () => {
             <div className="space-y-2">
               <h3 className="font-bold">Operating System Updates</h3>
               <p className="text-sm text-muted-foreground">
-                We can help you upgrade your operating system to the latest
+                Upgrade your operating system to the latest
                 version, ensuring you have access to the latest features and
                 security updates.
               </p>
