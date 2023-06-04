@@ -68,7 +68,7 @@ export const metadata = {
     "Computer peripherals",
     "Computer accessories",
     "Computer parts",
-    "Computer peripherals repair","Computer maintenance and repair",
+    "Computer peripherals repair", "Computer maintenance and repair",
     "Computer service",
     "Computer support",
     "Computer help",
@@ -110,11 +110,11 @@ export const metadata = {
   ],
   authors: [
     {
-      name: "maxchernov.a",
+      name: "chernov-dev",
       url: "https://troubleshoots.vercel.app/",
     },
   ],
-  creator: "maxchernov.a",
+  creator: "chernov-dev",
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "black" },
     { media: "(prefers-color-scheme: light)", color: "white" },

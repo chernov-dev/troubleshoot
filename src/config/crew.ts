@@ -33,7 +33,7 @@ export const crewConfig: ActiveCrew = {
       title: "O__O",
       ambitions: "now ᴘʟᴀʏɪɴɢ: Who asked (Feat: Nobody) ───────────⚪────── ◄◄⠀▐▐⠀►► 𝟸:𝟷𝟾 / 𝟹:𝟻𝟼⠀───○ 🔊",
       avatar: {
-        email: "yegay.vadim@sheridancollege.ca",
+        email: "yegayvadim@gmail.com",
         githubHandle: "yegayv",
       }
 
