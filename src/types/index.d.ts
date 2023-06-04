@@ -1,4 +1,3 @@
-import type { Icon } from "lucide-react";
 
 import { Icons } from "@/components/icons";
 
@@ -27,15 +26,15 @@ export type SidebarNavItem = {
   external?: boolean;
   icon?: keyof typeof Icons;
 } & (
-  | {
+    | {
       href: string;
       items?: never;
     }
-  | {
+    | {
       href?: string;
       items: NavLink[];
     }
-);
+  );
 
 export type SiteConfig = {
   name: string;

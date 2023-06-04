@@ -1,5 +1,3 @@
-import React from "react";
-
 export default async function FaqPage() {
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -13,7 +11,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 mt-1 w-6 h-6 text-gray-500"
+              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -25,7 +23,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
                 Can I cancel at anytime?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -40,7 +38,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 mt-1 w-6 h-6 text-gray-500"
+              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -52,7 +50,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
                 My team has credits. How do we use them?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -66,7 +64,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 mt-1 w-6 h-6 text-gray-500"
+              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -78,7 +76,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
                 How does Preline&apos;s pricing work?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -92,7 +90,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 mt-1 w-6 h-6 text-gray-500"
+              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -104,7 +102,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
                 How secure is Preline?
               </h3>
               <p className="mt-1 text-gray-500">
@@ -119,7 +117,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 mt-1 w-6 h-6 text-gray-500"
+              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -131,16 +129,17 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
                 How do I get access to a theme I purchased?
               </h3>
               <p className="mt-1 text-gray-500">
-                If you lose the link for a theme you purchased, don&apos;t panic!
-                We&apos;ve got you covered. You can login to your account, tap your
-                avatar in the upper right corner, and tap Purchases. If you
-                didn&apos;t create a login or can&apos;t remember the information, you can
-                use our handy Redownload page, just remember to use the same
-                email you originally made your purchases with.
+                If you lose the link for a theme you purchased, don&apos;t
+                panic! We&apos;ve got you covered. You can login to your
+                account, tap your avatar in the upper right corner, and tap
+                Purchases. If you didn&apos;t create a login or can&apos;t
+                remember the information, you can use our handy Redownload page,
+                just remember to use the same email you originally made your
+                purchases with.
               </p>
             </div>
           </div>
@@ -149,7 +148,7 @@ export default async function FaqPage() {
         <div className="py-8 first:pt-0 last:pb-0">
           <div className="flex gap-x-5">
             <svg
-              className="flex-shrink-0 mt-1 w-6 h-6 text-gray-500"
+              className="flex-shrink-0 w-6 h-6 mt-1 text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -161,7 +160,7 @@ export default async function FaqPage() {
             </svg>
 
             <div>
-              <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <h3 className="font-semibold text-gray-800 md:text-lg dark:text-gray-200">
                 Upgrade License Type
               </h3>
               <p className="mt-1 text-gray-500">

@@ -1,62 +1,38 @@
-import Link from "next/link";
+import Link from "next/link"
 
-import { marketingConfig } from "@/config/marketing";
-import { cn } from "@/lib/utils";
-import { MainNav } from "@/components/main-nav";
-import { SiteFooter } from "@/components/site-footer";
-import { buttonVariants } from "@/components/ui/button";
-import { AppNav } from "@/components/app-nav";
-import { siteConfig } from "@/config/site";
-import { Icons } from "@/components/icons";
+import { MainNav } from "@/components/main-nav"
+import { SiteFooter } from "@/components/site-footer"
+import { buttonVariants } from "@/components/ui/button"
+import { marketingConfig } from "@/config/marketing"
+import { cn } from "@/lib/utils"
 
 interface ServicesLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default async function ServicesLayout({
   children,
 }: ServicesLayoutProps) {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="container sticky top-0 z-40 bg-white">
-        <div className="flex h-16 items-center justify-between border-b border-b-slate-200 py-4">
+    <div className="flex flex-col min-h-screen">
+      <header className="container z-40 bg-background">
+        <div className="flex items-center justify-between h-20 py-6">
+          <MainNav items={marketingConfig.mainNav} />
           <nav>
-            <div className="flex gap-6 md:gap-10">
-              <Link href="/" className="hidden items-center space-x-2 md:flex">
-                <Icons.logo />
-                <span className="hidden font-bold sm:inline-block">
-                  {siteConfig.name}
-                </span>
-              </Link>
-              {marketingConfig.mainNav?.length ? (
-                <nav className="hidden gap-6 md:flex">
-                  {marketingConfig.mainNav?.map((item, index) => (
-                    <Link
-                      key={index}
-                      href={item.disabled ? "#" : item.href}
-                      className={cn(
-                        "flex items-center text-lg font-semibold text-slate-600 sm:text-sm",
-                        item.disabled && "cursor-not-allowed opacity-80"
-                      )}
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-                </nav>
-              ) : null}
-            </div>
+            <Link
+              href="/contact"
+              className={cn(
+                buttonVariants({ variant: "default", size: "sm" }),
+                "px-4"
+              )}
+            >
+              Book now
+            </Link>
           </nav>
-         
-          <Link
-            href="/contact"
-            className={cn(buttonVariants({ size: "sm" }), "px-4")}
-          >
-            Book now
-          </Link>
-          </div>
+        </div>
       </header>
       <main className="flex-1">{children}</main>
       <SiteFooter />
     </div>
-  );
+  )
 }

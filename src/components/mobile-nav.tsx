@@ -1,12 +1,12 @@
 'use client'
 
-import * as React from "react"
 import Link from "next/link"
+import * as React from "react"
 
-import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+import { siteConfig } from "@/config/site"
 import { useLockBody } from "@/hooks/user-lock-body"
+import { cn } from "@/lib/utils"
 import { MainNavItem } from "@/types"
 
 interface MobileNavProps {
