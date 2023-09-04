@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section className="pt-6 pb-8 space-y-6 md:pb-12 md:pt-10 lg:py-20">
       <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-        <Image src={hero} width={320} alt="Hero image" priority />
+        <Image src={hero} width={320} alt="Hero image" className="dark:bg-white rounded-full" priority />
         <h1 className="text-3xl font-heading sm:text-5xl md:text-6xl lg:text-7xl">
           Computer problems? We&apos;ve got you covered.
         </h1>

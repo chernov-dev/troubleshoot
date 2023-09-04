@@ -1,8 +1,12 @@
+import Link from "next/link"
+import { Button } from "./ui/button"
+import { Card } from "./ui/card"
+
 const FeatureSection = () => {
   return (
     <section
       id="features"
-      className="container py-8 space-y-6 rounded-lg bg-slate-50 dark:bg-transparent md:py-12 lg:py-24"
+      className="container py-8 space-y-6 rounded-lg md:py-12 lg:py-24"
 
     >
       <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -15,7 +19,7 @@ const FeatureSection = () => {
         </p>
       </div>
       <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
-        <div className="relative p-2 overflow-hidden border rounded-lg bg-background">
+        <Card>
           <div className="flex h-[fit] gap-2 flex-col justify-between rounded-md p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,8 +46,8 @@ const FeatureSection = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="relative p-2 overflow-hidden border rounded-lg bg-background">
+        </Card>
+        <Card>
           <div className="flex h-[fit] gap-2 flex-col justify-between rounded-md p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,8 +73,8 @@ const FeatureSection = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="relative p-2 overflow-hidden border rounded-lg bg-background">
+        </Card>
+        <Card>
           <div className="flex h-[fit] gap-2 flex-col justify-between rounded-md p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,8 +102,8 @@ const FeatureSection = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="relative p-2 overflow-hidden border rounded-lg bg-background">
+        </Card>
+        <Card>
           <div className="flex h-[fit] gap-2 flex-col justify-between rounded-md p-6">
             <svg viewBox="0 0 24 24" className="w-12 h-12 fill-current">
               <svg
@@ -124,8 +128,8 @@ const FeatureSection = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="relative p-2 overflow-hidden border rounded-lg bg-background">
+        </Card>
+        <Card>
           <div className="flex h-[fit] gap-2 flex-col justify-between rounded-md p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -150,8 +154,8 @@ const FeatureSection = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="relative p-2 overflow-hidden border rounded-lg bg-background">
+        </Card>
+        <Card>
           <div className="flex h-[fit] gap-2 flex-col justify-between rounded-md p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +183,7 @@ const FeatureSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        </Card>
       </div>
       <div className="mx-auto text-center md:max-w-[58rem]">
         <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -187,6 +191,10 @@ const FeatureSection = () => {
           including hardware issues, software installation, virus removal, and
           system optimization.
         </p>
+      </div>
+      <div className="mx-auto text-center md:max-w-[58rem]">
+      <Button><Link href={"/faq"}>
+      Check out FAQ</Link></Button>
       </div>
     </section>
   )

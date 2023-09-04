@@ -22,7 +22,7 @@ const crewCard = ({ crew }: CrewCardProps) => {
         </CardTitle>
         <CardDescription className="overflow-hidden text-sm text-muted-foreground">{crew.title}</CardDescription>
       </CardHeader>
-      <CardContent className="grow" title={crew.ambitions}><div className="line-clamp-1">{crew.ambitions}</div></CardContent>
+      <CardContent className="grow" title={crew.ambitions}><div className="md:line-clamp-1">{crew.ambitions}</div></CardContent>
       <CardFooter className=" justify-between">
       <div className="space-x-1">
       <Link

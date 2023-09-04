@@ -7,6 +7,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { CardsChat } from "@/components/chat";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { BotIcon } from "lucide-react";
 
 
 const fontSans = FontSans({
@@ -68,7 +72,7 @@ export const metadata = {
     "Computer peripherals",
     "Computer accessories",
     "Computer parts",
-    "Computer peripherals repair","Computer maintenance and repair",
+    "Computer peripherals repair", "Computer maintenance and repair",
     "Computer service",
     "Computer support",
     "Computer help",
@@ -158,11 +162,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable
         )}
       >
-        
+
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <Toaster />
           <TailwindIndicator />
+          <div className="md:fixed bottom-5 right-5">
+                <CardsChat />
+          </div>
         </ThemeProvider>
       </body>
     </html>
