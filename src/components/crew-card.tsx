@@ -27,7 +27,8 @@ const crewCard = ({ crew }: CrewCardProps) => {
       <div className="space-x-1">
       <Link
           className="inline-flex justify-center items-center text-gray-500 border border-gray-200 w-8 h-8 rounded-md hover:text-gray-800 hover:shadow-sm dark:hover:text-gray-200 dark:border-gray-700 dark:hover:shadow-slate-700/[.7]"
-          href="#"
+          href={"https://linkedin.com/in/" + crew.avatar?.linkedinHandle}
+          target="_blank"
         >
           <LinkedinIcon className="w-3.5 h-3.5" />
         </Link>

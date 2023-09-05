@@ -23,7 +23,7 @@ const TestimonialSection = () => {
         <figure className="max-w-screen-md mx-auto">
           <QuoteIcon className='h-12 w-12 mx-auto mb-3 '/>
           <blockquote>
-            <p className="leading-normal text-muted-foreground sm:text-2xl sm:leading-7">"I had been struggling with a slow and virus-infested computer for weeks until I came across Troubleshoot. Their remote services were a lifesaver! The technician was professional, patient, and efficient. My PC is now running like new, thanks to their virus removal and system optimization. I highly recommend Troubleshoot for all your computer needs."</p>
+            <p className="leading-normal text-muted-foreground sm:text-2xl sm:leading-7">&quot;I had been struggling with a slow and virus-infested computer for weeks until I came across Troubleshoot. Their remote services were a lifesaver! The technician was professional, patient, and efficient. My PC is now running like new, thanks to their virus removal and system optimization. I highly recommend Troubleshoot for all your computer needs.&quot;</p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
             <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture" />

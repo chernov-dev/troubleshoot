@@ -12,6 +12,7 @@ export const crewConfig: ActiveCrew = {
       avatar: {
         email: "weblastor@gmail.com",
         githubHandle: "l11ul1",
+        linkedinHandle:"",
       }
 
     },
@@ -23,6 +24,8 @@ export const crewConfig: ActiveCrew = {
       ambitions: "V is for Victoir",
       avatar: {
         email: "pakvitalya@gmail.com",
+        githubHandle: "",
+        linkedinHandle:"",
       }
 
     },
@@ -35,6 +38,7 @@ export const crewConfig: ActiveCrew = {
       avatar: {
         email: "yegayvadim@gmail.com",
         githubHandle: "yegayv",
+        linkedinHandle:"yegayv",
       }
 
     },
@@ -47,6 +51,7 @@ export const crewConfig: ActiveCrew = {
       avatar: {
         email: "513535b@gmail.com",
         githubHandle: "chernov-dev",
+        linkedinHandle:"",
       }
     },
   ],
