@@ -1,5 +1,8 @@
 import CrewCard from "@/components/crew-card";
+import { CardsTeamMembers } from "@/components/team-members";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { crewConfig } from "@/config/crew";
+import { GithubIcon } from "lucide-react";
 
 
 export default async function AboutPage() {
@@ -15,6 +18,25 @@ export default async function AboutPage() {
             providing fast and reliable computer repair to our customers
           </p>
         </div>
+        {/* <Card className="relative w-[480px]">
+        <CardHeader>
+            <div className="w-[350px] h-[350px] bg-black"></div>
+          </CardHeader>
+          <CardContent className="pl-12">
+          <CardTitle>Vadim Yegay</CardTitle>
+            <CardDescription>blah blah</CardDescription>
+          </CardContent>
+          <CardFooter className="absolute h-full w-20 right-0 top-0 flex flex-col gap-6 justify-between py-6">
+            <GithubIcon className="w-5 h-5"></GithubIcon>
+            <GithubIcon className="w-5 h-5"></GithubIcon>
+            <GithubIcon className="w-5 h-5"></GithubIcon>
+            <GithubIcon className="w-5 h-5"></GithubIcon>
+            <div className="grow h-full bg-white w-0.5"></div>
+          </CardFooter>
+        </Card> */}
+       {/* <div className="w-96">
+       <CardsTeamMembers/>
+       </div> */}
         <div className="mx-auto flex flex-col gap-4 md:max-w-[64rem]">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 max-">
             {crewConfig.crew.map((crew, index) => (
