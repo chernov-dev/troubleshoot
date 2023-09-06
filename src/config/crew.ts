@@ -9,10 +9,10 @@ export const crewConfig: ActiveCrew = {
       name: "Vladislav",
       title: "Founder / CEO",
       ambitions: "Can't even make it to the plane, what can I make with your PC?",
+      linkedinHandle: "",
       avatar: {
         email: "weblastor@gmail.com",
         githubHandle: "l11ul1",
-        linkedinHandle:"",
       }
 
     },
@@ -22,10 +22,10 @@ export const crewConfig: ActiveCrew = {
       name: "Viktoriya",
       title: "UI/UX Designer",
       ambitions: "V is for Victoir",
+      linkedinHandle: "",
       avatar: {
         email: "pakvitalya@gmail.com",
         githubHandle: "",
-        linkedinHandle:"",
       }
 
     },
@@ -35,10 +35,10 @@ export const crewConfig: ActiveCrew = {
       name: "Vadim",
       title: "Maksim's slave",
       ambitions: "We can make your minor problems major!",
+      linkedinHandle: "yegayv",
       avatar: {
         email: "yegayvadim@gmail.com",
         githubHandle: "yegayv",
-        linkedinHandle:"yegayv",
       }
 
     },
@@ -48,10 +48,10 @@ export const crewConfig: ActiveCrew = {
       name: "Maksim",
       title: "Web developer",
       ambitions: "Living my best life in the worst of the worlds",
+      linkedinHandle: "chernov-dev",
       avatar: {
-        email: "513535b@gmail.com",
+        email: "maxchernov.a+troubleshoot@gmail.com",
         githubHandle: "chernov-dev",
-        linkedinHandle:"",
       }
     },
   ],

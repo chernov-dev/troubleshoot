@@ -13,6 +13,7 @@ export type CrewProps = {
   name: string;
   title: string;
   ambitions: string;
+  linkedinHandle: string;
   avatar?: ReactAvatarProps;
 };
 
